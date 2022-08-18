@@ -1,0 +1,33 @@
+.social-icons {
+  @extend %reset-list;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  @extend %reset-link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  color: #afb1b8;
+  border-radius: 50%;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--acent-txt-cl);
+  }
+}
+
+.social-icon {
+  fill: currentColor;
+}

@@ -1,0 +1,35 @@
+.peculiarities {
+  @extend %section;
+  padding-bottom: 0;
+}
+
+.peculiarities__items {
+  @extend %reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.peculiarities__background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.peculiarities-item {
+  width: 270px;
+}
+
+.peculiarities-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
