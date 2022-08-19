@@ -1,0 +1,122 @@
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    // &.is-open {
+    //   opacity: 1;
+    //   pointer-events: initial;
+    //   visibility: visible;
+    // }
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-section-color);
+  padding: 48px 40px;
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+
+  .menu-overlay.is-open & {
+    transform: translateX(0);
+  }
+}
+
+.mobile-list {
+  @extend %reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: auto;
+}
+
+.mobile-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47px / 40px);
+  letter-spacing: 0.02em;
+  color: #212121;
+
+  &:active {
+    color: #2196f3;
+  }
+}
+
+.menu-contacts {
+  @extend %reset-link;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-tel {
+  @extend %reset-link;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: calc(40px / 34px);
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--acent-txt-cl);
+}
+
+.menu-amail {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: calc(28px / 24px);
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--description-txt-cl);
+  margin-bottom: 64px;
+}
+
+.mobile-socials-list {
+  @extend %reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: calc(22px / 18px);
+  letter-spacing: 0.02em;
+  text-align: left;
+  gap: 10px;
+}
+
+.mobile-socials-link {
+  @extend %reset-link;
+  display: flex;
+  color: var(--acent-txt-cl);
+}
+
+.mobile-socials-item:not(:last-child) .mobile-socials-link::after {
+  content: "";
+  display: block;
+  width: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}

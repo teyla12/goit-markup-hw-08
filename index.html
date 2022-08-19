@@ -41,6 +41,13 @@
         <a class="header__logo logo link" href=""
           >Web<span class="color-1">Studio</span></a
         >
+
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -95,11 +102,13 @@
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-subtitle">Внимание к деталям</h3>
-              <p class="section-description">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
+              <div>
+                <h3 class="peculiarities-subtitle">Внимание к деталям</h3>
+                <p class="section-description">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </div>
             </li>
             <li class="peculiarities__item">
               <div class="peculiarities__background">
@@ -107,11 +116,13 @@
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-subtitle">Пунктуальность</h3>
-              <p class="section-description">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
+              <div>
+                <h3 class="peculiarities-subtitle">Пунктуальность</h3>
+                <p class="section-description">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </div>
             </li>
             <li class="peculiarities__item">
               <div class="peculiarities__background">
@@ -119,11 +130,13 @@
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-subtitle">Планирование</h3>
-              <p class="section-description">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
+              <div>
+                <h3 class="peculiarities-subtitle">Планирование</h3>
+                <p class="section-description">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </div>
             </li>
             <li class="peculiarities__item">
               <div class="peculiarities__background">
@@ -131,17 +144,19 @@
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="peculiarities-subtitle">Современные технологии</h3>
-              <p class="section-description">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
+              <div>
+                <h3 class="peculiarities-subtitle">Современные технологии</h3>
+                <p class="section-description">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- About section -->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="about__items">
@@ -183,9 +198,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Our team section -->
-      <section class="our-team">
+      <!-- <section class="our-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
@@ -462,14 +477,14 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Our clients section -->
       <section class="our-clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
 
           <ul class="clients-list list">
-            <li>
+            <li class="our-clients_item">
               <a
                 class="company-link link"
                 href=""
@@ -482,7 +497,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="our-clients_item">
               <a
                 class="company-link link"
                 href=""
@@ -495,7 +510,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="our-clients_item">
               <a
                 class="company-link link"
                 href=""
@@ -508,7 +523,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="our-clients_item">
               <a
                 class="company-link link"
                 href=""
@@ -521,7 +536,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="our-clients_item">
               <a
                 class="company-link link"
                 href=""
@@ -534,7 +549,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="our-clients_item">
               <a
                 class="company-link link"
                 href=""
@@ -552,7 +567,7 @@
       </section>
     </main>
     <!-- Footer section -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="foter-contacts">
           <div class="logo-footer">
@@ -670,7 +685,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
@@ -751,6 +766,42 @@
 
           <button class="register-form-btn" type="submit">Отправить</button>
         </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-overlay is-open" data-menu>
+      <div class="menu-container">
+        <button class="menu-btn" type="button" data-menu-close>
+          <svg class="menu-close-btn" width="40" height="40">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list">
+          <li class="mobile-item">Студия<a href=""></a></li>
+          <li class="mobile-item">Портфолио<a href=""></a></li>
+          <li class="mobile-item">Контакты<a href=""></a></li>
+        </ul>
+        <ul class="menu-contacts">
+          <a class="menu-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="menu-amail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </ul>
+        <ul class="mobile-socials-list">
+          <li class="mobile-socials-item">
+            <a class="mobile-socials-link" href="">Instagram</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="mobile-socials-link" href="">Twitter</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="mobile-socials-link" href="">Facebook</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="mobile-socials-link" href="">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
 

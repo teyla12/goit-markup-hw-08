@@ -2,6 +2,7 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/placeholders";
+
 // base styles
 @import "./base/base";
 @import "./base/reset";
@@ -10,11 +11,13 @@
 @import "./components/buttons";
 @import "./components/container";
 @import "./components/titles";
-@import "./components/texts";
+
+// @import "./components/texts";
 @import "./components/modal-window";
 @import "./components/modal-form";
 @import "./components/logo";
 @import "./components/social";
+@import "./components/mobile-menu";
 
 // layout styles
 @import "./layout/header";

@@ -42,6 +42,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     color: var(--acent-txt-cl);

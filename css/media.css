@@ -1,0 +1,17 @@
+/* Mobile ferst css */
+.main-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42px / 26px);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+  }
+}
