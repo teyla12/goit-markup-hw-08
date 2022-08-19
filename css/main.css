@@ -586,6 +586,11 @@ textarea::placeholder {
   pointer-events: none;
   visibility: hidden;
 }
+.menu-btn .menu-overlay.is-open {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
+}
 
 .menu-container {
   display: -webkit-box;
