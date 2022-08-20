@@ -2,7 +2,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  max-width: 528px;
   min-height: 581px;
   background-color: white;
   border-radius: 4px;
@@ -14,6 +14,10 @@
   padding-right: 41px;
   padding-bottom: 40px;
   padding-left: 39px;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
 }
 
 .backdrop.is-hidden.modal {
@@ -63,6 +67,10 @@
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 370px;
+  }
 }
 
 .register-form-group {
@@ -84,6 +92,10 @@
 .register-form-wrap {
   display: block;
   margin-bottom: 10px;
+
+  // @media screen and (max-width: 1199px) {
+  //   max-width: 370px;
+  // }
 }
 
 .register-form-field {
@@ -153,11 +165,15 @@ textarea::placeholder {
 .register-form-agreement-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: calc(24px / 14px);
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .register-icon-uncheck {
