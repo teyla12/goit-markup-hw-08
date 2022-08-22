@@ -8,8 +8,13 @@
 .team-members {
   @extend %reset-list;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .team-member {

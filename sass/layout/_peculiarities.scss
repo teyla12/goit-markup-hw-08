@@ -1,6 +1,8 @@
 .peculiarities {
   @extend %section;
-  padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .peculiarities__items {
