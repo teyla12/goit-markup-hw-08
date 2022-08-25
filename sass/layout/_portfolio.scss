@@ -24,7 +24,16 @@
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 30px * 1) / 2);
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px * 1) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
 }
 
 .portfolio-img-overlay {
