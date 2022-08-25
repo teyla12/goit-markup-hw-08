@@ -691,6 +691,7 @@ textarea::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  padding-left: 0;
 }
 
 .menu-tel {
@@ -932,13 +933,20 @@ textarea::placeholder {
   margin-right: auto;
   margin-left: auto;
   background-color: var(--dark-bg-color);
-  padding: 200px 452px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  padding: 200px 0px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-background-img.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1012,9 +1020,9 @@ textarea::placeholder {
 }
 
 .peculiarities-subtitle {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1028,6 +1036,13 @@ textarea::placeholder {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .peculiarities-subtitle {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 .section-description {
@@ -1510,9 +1525,6 @@ textarea::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .portfolio-item {
