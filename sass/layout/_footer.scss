@@ -128,8 +128,14 @@
 
 .footer-subsubscription-form-group {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .footer-subscription-form {
@@ -137,12 +143,8 @@
   justify-content: center;
 }
 
-// .footer-subscription-form-wrap {
-//   width: 450px;
-// }
-
 .footer-subscription-form-input {
-  min-width: 358px;
+  width: 450px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -156,6 +158,10 @@
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 358px;
+  }
 }
 
 .footer-subscription-form-btn {

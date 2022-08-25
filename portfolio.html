@@ -31,7 +31,7 @@
     <!-- Header section -->
     <header class="header portfolio__header">
       <div class="container header__container">
-        <a class="header__logo logo link" href=""
+        <a class="header__logo logo link" href="index.html"
           >Web<span class="color-1">Studio</span></a
         >
 
@@ -101,12 +101,37 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="">
                 <div class="portfolio-img-overlay">
-                  <img
-                    class="portfolio-img"
-                    src="images/portfolio/img-1.jpg"
-                    alt="на экране ноутбука фотографии технарей"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images\portfolio\desktop\img-1@1x.jpg 1x,
+                        ./images\portfolio\desktop\img-1@2x.jpg 2x
+                      "
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images\portfolio\tablet\img-1@1x.jpg 1x,
+                        ./images\portfolio\tablet\img-1@2x.jpg 2x
+                      "
+                    />
+                    <!-- Momile -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images\portfolio\mobile\img-1@1x_mob.jpg 1x,
+                        ./images\portfolio\mobile\img-1@2x_mob.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images\portfolio\desktop\img-1@1x.jpg"
+                      alt="на экране ноутбука фотографии технарей"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -124,12 +149,36 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href=""
-                ><img
-                  class="portfolio-img"
-                  src="images/portfolio/img-2.jpg"
-                  alt="постер с двумя баскетболистами"
-                  width="370"
-                />
+                ><picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images\portfolio\desktop\img-2@1x.jpg 1x,
+                      ./images\portfolio\desktop\img-2@2x.jpg 2x
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images\portfolio\tablet\img-2@1x.jpg 1x,
+                      ./images\portfolio\tablet\img-2@2x.jpg 2x
+                    "
+                  />
+                  <!-- Momile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images\portfolio\mobile\img-2@1x_mob.jpg 1x,
+                      ./images\portfolio\mobile\img-2@2x_mob.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images\portfolio\desktop\img-1@1x.jpg"
+                    alt="баскетболисты"
+                  />
+                </picture>
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-img-title">
                     Постер <span lang="en">Orlean vs Golden Star</span>
@@ -140,12 +189,36 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href=""
-                ><img
-                  class="portfolio-img"
-                  src="images/portfolio/img-3.jpg"
-                  alt="название ресторана на фоне рыбы"
-                  width="370"
-                />
+                ><picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images\portfolio\desktop\img-3@1x.jpg 1x,
+                      ./images\portfolio\desktop\img-3@2x.jpg 2x
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images\portfolio\tablet\img-3@1x.jpg 1x,
+                      ./images\portfolio\tablet\img-3@2x.jpg 2x
+                    "
+                  />
+                  <!-- Momile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images\portfolio\mobile\img-3@1x_mob.jpg 1x,
+                      ./images\portfolio\mobile\img-3@2x_mob.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images\portfolio\desktop\img-3@1x.jpg"
+                    alt="название ресорана а фоне рыбы"
+                  />
+                </picture>
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-img-title">
                     Ресторан <span lang="en">Seafood</span>
@@ -156,12 +229,36 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href="">
-                <img
-                  class="portfolio-img"
-                  src="images/portfolio/img-4.jpg"
-                  alt="накладные наушники"
-                  width="370"
-                />
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images\portfolio\desktop\img-4@1x.jpg 1x,
+                      ./images\portfolio\desktop\img-4@2x.jpg 2x
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images\portfolio\tablet\img-4@1x.jpg 1x,
+                      ./images\portfolio\tablet\img-4@2x.jpg 2x
+                    "
+                  />
+                  <!-- Momile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images\portfolio\mobile\img-4@1x_mob.jpg 1x,
+                      ./images\portfolio\mobile\img-4@2x_mob.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images\portfolio\mobile\img-4@1x_mob.jpg"
+                    alt="наушники"
+                  />
+                </picture>
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-img-title">
                     Проект <span lang="en"> Prime</span>
@@ -172,12 +269,36 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href=""
-                ><img
-                  class="portfolio-img"
-                  src="images/portfolio/img-5.jpg"
-                  alt="белая и бежевая коробочки"
-                  width="370"
-                />
+                ><picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images\portfolio\desktop\img-5@1x.jpg 1x,
+                      ./images\portfolio\desktop\img-5@2x.jpg 2x
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images\portfolio\tablet\img-5@1x.jpg 1x,
+                      ./images\portfolio\tablet\img-5@2x.jpg 2x
+                    "
+                  />
+                  <!-- Momile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images\portfolio\mobile\img-5@1x_mob.jpg 1x,
+                      ./images\portfolio\mobile\img-5@2x_mob.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images\portfolio\mobile\img-5@1x_mob.jpg"
+                    alt="коробочки"
+                  />
+                </picture>
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-img-title">
                     Проект <span lang="en"> Boxes</span>
@@ -188,12 +309,36 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href=""
-                ><img
-                  class="portfolio-img"
-                  src="images/portfolio/img-6.jpg"
-                  alt="манитор эпл с изображением карты"
-                  width="370"
-                />
+                ><picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images\portfolio\desktop\img-6@1x.jpg 1x,
+                      ./images\portfolio\desktop\img-6@2x.jpg 2x
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images\portfolio\tablet\img-6@1x.jpg 1x,
+                      ./images\portfolio\tablet\img-6@2x.jpg 2x
+                    "
+                  />
+                  <!-- Momile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images\portfolio\mobile\img-6@1x_mob.jpg 1x,
+                      ./images\portfolio\mobile\img-6@2x_mob.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images\portfolio\mobile\img-6@1x_mob.jpg"
+                    alt="манитор єпл с изображением карты"
+                  />
+                </picture>
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-img-title">
                     <span lang="en">Inspiration has no Borders</span>
@@ -204,12 +349,36 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href=""
-                ><img
-                  class="portfolio-img"
-                  src="images/portfolio/img-7.jpg"
-                  alt="разворот журнала"
-                  width="370"
-                />
+                ><picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images\portfolio\desktop\img-7@1x.jpg 1x,
+                      ./images\portfolio\desktop\img-7@2x.jpg 2x
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images\portfolio\tablet\img-7@1x.jpg 1x,
+                      ./images\portfolio\tablet\img-7@2x.jpg 2x
+                    "
+                  />
+                  <!-- Momile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images\portfolio\mobile\img-7@1x_mob.jpg 1x,
+                      ./images\portfolio\mobile\img-7@2x_mob.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images\portfolio\mobile\img-7@1x_mob.jpg"
+                    alt="разворот журнала"
+                  />
+                </picture>
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-img-title">
                     Издание <span lang="en"> Limited Edition</span>
@@ -220,12 +389,36 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href=""
-                ><img
-                  class="portfolio-img"
-                  src="images/portfolio/img-8.jpg"
-                  alt="этикетка с названием бренда"
-                  width="370"
-                />
+                ><picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images\portfolio\desktop\img-8@1x.jpg 1x,
+                      ./images\portfolio\desktop\img-8@2x.jpg 2x
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images\portfolio\tablet\img-8@1x.jpg 1x,
+                      ./images\portfolio\tablet\img-8@2x.jpg 2x
+                    "
+                  />
+                  <!-- Momile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images\portfolio\mobile\img-8@1x_mob.jpg 1x,
+                      ./images\portfolio\mobile\img-8@2x_mob.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images\portfolio\mobile\img-8@1x_mob.jpg"
+                    alt="бирка"
+                  />
+                </picture>
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-img-title">Проект LAB</h2>
                   <p class="porfolio-img-description">Маркетинг</p>
@@ -234,12 +427,36 @@
             </li>
             <li class="portfolio-item">
               <a class="portfolio-link" href=""
-                ><img
-                  class="portfolio-img"
-                  src="images/portfolio/img-9.jpg"
-                  alt="руки печатают на ноутбуке"
-                  width="370"
-                />
+                ><picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images\portfolio\desktop\img-9@1x.jpg 1x,
+                      ./images\portfolio\desktop\img-9@2x.jpg 2x
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images\portfolio\tablet\img-9@1x.jpg 1x,
+                      ./images\portfolio\tablet\img-9@2x.jpg 2x
+                    "
+                  />
+                  <!-- Momile -->
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images\portfolio\mobile\img-9@1x_mob.jpg 1x,
+                      ./images\portfolio\mobile\img-9@2x_mob.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images\portfolio\mobile\img-9@1x_mob.jpg"
+                    alt="руки перчатают на ноутбуке"
+                  />
+                </picture>
                 <div class="portfolio-wrapper">
                   <h2 class="portfolio-img-title">
                     <span lang="en">Growing Business</span>
@@ -373,5 +590,49 @@
         </form>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-overlay" data-menu>
+      <div class="menu-container">
+        <button class="menu-btn" type="button" data-menu-close>
+          <svg class="menu-close-btn" width="40" height="40">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list">
+          <li class="mobile-item">
+            <a class="mobile-link" href="index.html">Студия</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="menu-contacts">
+          <a class="menu-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="menu-amail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </ul>
+        <ul class="mobile-socials-list">
+          <li class="mobile-socials-item">
+            <a class="mobile-socials-link" href="">Instagram</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="mobile-socials-link" href="">Twitter</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="mobile-socials-link" href="">Facebook</a>
+          </li>
+          <li class="mobile-socials-item">
+            <a class="mobile-socials-link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
